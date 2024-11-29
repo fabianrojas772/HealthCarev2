@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+    --primary-color: #12ac8e;
+    --primary-color-dark: #0d846c;
+    --primary-color-light: #e9f7f7;
+    --secondary-color: #fb923c;
+    --text-dark: #333333;
+    --text-light: #767268;
+    --white: #ffffff;
+    --max-width: 1200px;
+}
+
+/**-----------Header-------------**/
+header{
+  background-image: linear-gradient(to right, rgba(18, 172, 142, 0.8), rgba(18, 172, 142, 0.8)), url(images/header.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 680px;
+}
+
+.contenedorseccionuno{
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.header_menu{
+ display: flex;
+ gap: 5rem;
+ align-items: center;
+ margin: 1rem 8rem;
+}
+
+a{
+  display: flex;
+  text-decoration: none;
+  color: var(--white);
+}
+div{
+  display: block;
+  unicode-bidi: isolate;
+}
+.link{
+  display: list-item;
+  list-style-type: none;
+}
+
+/* LOGO */
+
+.header_logo{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--white);
+  display: flex;
+}
+.Care{
+  display: flex;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+.btn{
+    padding: 0.70rem 2rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    white-space: nowrap;
+    color: var(--white);
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/**-----------CONTENIDO Y FORMULARIO-------------**/
+
+.elementos_header{
+  display: flex;
+  align-items: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  gap: 5rem;
+  padding: 5rem 1rem;
+}
+.texto-header h1{
+  margin-bottom: 1rem;
+  max-width: 800px;
+  font-size: 3.5rem;
+  line-height: 4.5rem;
+  color: var(--white);
+}
+.texto-header p{
+  color: var(--white);
+  padding-bottom: 1.5rem;
+  padding-right: 11rem;
+  text-align: start;
+}
+
+/**-----------FORMULARIO-------------**/
+
+.form_header{
+  max-width: 100%;
+  max-width: 350px;
+}
+.form_header form{
+  display: grid;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+.form_header h2{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.form_header input{
+  padding: 0.75rem;
+  border: none;
+  font-size: 1rem;
+  background-color: var(--primary-color-light);
+  border-radius: 5px;
+}
+.form_header button{
+  background-color: var(--primary-color);
+  font-size: 15px;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: var(--primary-color-dark);
+  transition: 0.3s;
+}
